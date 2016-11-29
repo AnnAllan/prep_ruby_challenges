@@ -1,4 +1,4 @@
-ddef is_prime(n)
+def is_prime(n)
     if n % 2 == 0
     	return false
     end
