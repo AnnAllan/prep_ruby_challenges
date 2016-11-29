@@ -1,16 +1,17 @@
-def is_prime(value)
-	if value%2==0
-		puts false
-		return 
-	end
-	(3..(value/2)).step(2) do |i|
-		if value%i==0
-			puts false
-			return
-		end
-	end
-	puts true
+ddef is_prime(n)
+    if n % 2 == 0
+    	return false
+    end
+    i = 3
+    while i < n**0.5 + 1
+        if n % i == 0
+        	return false
+        end 
+        i += 2
+    end
+    return true
 end
+
 
 is_prime(7)
 
