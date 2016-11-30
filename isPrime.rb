@@ -1,4 +1,10 @@
 def is_prime(n)
+    if n == 1
+        return false
+    end
+    if n == 2
+        return true
+    end
     if n % 2 == 0
     	return false
     end
@@ -11,7 +17,6 @@ def is_prime(n)
     end
     return true
 end
-
 
 is_prime(7)
 
