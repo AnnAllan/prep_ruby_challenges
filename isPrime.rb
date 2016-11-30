@@ -1,5 +1,5 @@
 def is_prime(n)
-    if n == 1
+    if n < 2
         return false
     end
     if n == 2
